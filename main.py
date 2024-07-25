@@ -18,9 +18,9 @@ def main():
         elif role == '2':
             customer_role()
         else:
-            print("Invalid role!!! Please try again.")
+            print("Invalid role!!! Please try again...")
 
-        ask_role = input("Do you want to select another role? Press y for yes and n for no ")
+        ask_role = input("Do you want to select another role? Press y for yes and n for no: ")
         if ask_role.lower() != 'y':
             break
 

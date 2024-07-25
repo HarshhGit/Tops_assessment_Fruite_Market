@@ -50,7 +50,7 @@ class FruitMarket:
             elif choice == '3':
                 self.update_fruit()
             else:
-                print("Invalid choice!!! Please try again.")
+                print("Invalid choice!!! Please try again...")
 
             ask_user = input("Do you want to perform more operation: Y for yes and N for no: ")
             if ask_user.lower() != 'y':
