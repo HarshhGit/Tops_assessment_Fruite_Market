@@ -21,7 +21,7 @@ def main():
             print("Invalid role!!! Please try again.")
 
         ask_role = input("Do you want to select another role? Press y for yes and n for no ")
-        if "y" or "Y" in ask_role != True:
+        if ask_role.lower() != 'y':
             break
 
 if __name__ == "__main__":

@@ -53,7 +53,7 @@ class FruitMarket:
                 print("Invalid choice!!! Please try again.")
 
             ask_user = input("Do you want to perform more operation: Y for yes and N for no: ")
-            if "Y" or "y" in ask_user != True:
+            if ask_user.lower() != 'y':
                 break
                 
 
