@@ -19,3 +19,10 @@ def main():
             customer_role()
         else:
             print("Invalid role!!! Please try again.")
+
+        ask_role = input("Do you want to select another role? Press y for yes and n for no ")
+        if "y" or "Y" in ask_role != True:
+            break
+
+if __name__ == "__main__":
+    main()
