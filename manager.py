@@ -1,4 +1,4 @@
-#manager.py
+#manager role
 
 class FruitMarket:
     def __init__ (self):    
