@@ -4,7 +4,8 @@ class FruitMarket:
     def __init__ (self):    
         self.stock = {}     #stores fruit data
 
-    def add_fruit(self):    #Fruit adding function
+    def add_fruit(self):    #Adding fruits in stock function
+        print("ADD FRUIT IN STOCK: ")
         fruit_name = input("Enter fruit Name: ")
         qty = int(input("Enter qty (in kg): "))
         price = int(input("Enter price: "))
@@ -16,14 +17,14 @@ class FruitMarket:
             self.stock[fruit_name] = {'qty': qty, 'price' : price}
         print(f"{fruit_name} Added successfully!")
 
-    def view_stock(self):   #stok view function     
+    def view_stock(self):   #Stok view function     
         if not self.stock: 
             print("No stock available.")
         else:
             for fruit, details in self.stock.items():
                 print(f"{fruit}: quantity = {details['qty']}kg, Price = {details['price']} per kg")
 
-    def update_fruit(self): #fruit update function
+    def update_fruit(self): #Fruit update function
         fruit_name = input("Enter fruit name to update: ")
         if fruit_name in self.stock:
             qty = int(input("Enter qty for update(in kg): "))
@@ -33,7 +34,7 @@ class FruitMarket:
         else:
             print(f"{fruit_name} Not found in stock.")
 
-    def manager_role(self):
+    def manager_role(self): #Manager Functionality
         while True:
             print("\n* Fruit Market Manager *")
             
