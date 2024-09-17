@@ -1,4 +1,3 @@
-#Customer Role
-
 def customer_role():
-    print("Customer Functionality is under proccess...")
+    print("Customer functionality is under process...")
+    return
